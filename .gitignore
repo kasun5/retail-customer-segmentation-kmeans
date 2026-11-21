@@ -17,20 +17,27 @@ __pycache__/
 
 # Raw data and generated results
 # Keep the data directory structure, but exclude large/local artifacts.
-data/raw/*.csv
-data/interim/*.csv
-data/processed/*.csv
-data/predictions/*.csv
+data/raw/*
+!data/raw/.gitkeep
+
+data/interim/*
+!data/interim/.gitkeep
+
+data/processed/*
+!data/processed/.gitkeep
+
+data/predictions/*
+!data/predictions/.gitkeep
 
 # Trained models
-models/*.pkl
-models/*.joblib
+models/*
+!models/.gitkeep
 
 # Generated reports and figures
-reports/figures/*.png
-reports/figures/*.jpg
-reports/figures/*.jpeg
-reports/figures/*.pdf
+reports/*
+!reports/figures/
+reports/figures/*
+!reports/figures/.gitkeep
 
 # Test and coverage output
 .pytest_cache/
